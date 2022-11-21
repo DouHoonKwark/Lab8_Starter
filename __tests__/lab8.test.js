@@ -33,7 +33,6 @@ describe('Basic user flow for Website', () => {
     if (plainValue.price.length == 0) { allArePopulated = false; }
     if (plainValue.image.length == 0) { allArePopulated = false; }
     // Expect allArePopulated to still be true
-    expect(allArePopulated).toBe(true);
 
     // TODO - Step 1
     // Right now this function is only checking the first <product-item> it found, make it so that

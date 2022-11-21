@@ -13,11 +13,11 @@ test('matches valid phone numbers', () => {
 });
 
 test('matches valid phone numbers', () => {
-    expect(functions.isPhoneNumber('(110)708-7222')).toBe(false);
+    expect(functions.isPhoneNumber('1107087222')).toBe(false);
 });
 
 test('matches valid phone numbers', () => {
-    expect(functions.isPhoneNumber('833-6242')).toBe(false);
+    expect(functions.isPhoneNumber('8331236242')).toBe(false);
 });
 
 /////////////////////////////////////////////
@@ -30,11 +30,11 @@ test('matches valid emails', () => {
 });
 
 test('matches valid emails', () => {
-    expect(functions.isEmail('UizJFKr_UvN8ppTw5qWELXuBE@wqwe.mUy')).toBe(false);
+    expect(functions.isEmail('UizJFKr_UvN8ppTw5qWELXuBE@wqwe22mUy')).toBe(false);
 });
 
 test('matches valid emails', () => {
-    expect(functions.isEmail('uIe@AshbSYibqeCCADHKYKqzTQyyDvFRUXSeevXNPbEQInTWRdMs.OPb')).toBe(false);
+    expect(functions.isEmail('uIe@AshbSYibqeCCADHKYKqzTQyyDvFRUXSeevXNPbEQInTWRdMsqqqqOPb')).toBe(false);
 });
 
 //////////////////////////////////////////////
@@ -48,11 +48,11 @@ test('matches valid strong password', () => {
 });
 
 test('matches valid strong password', () => {
-    expect(functions.isStrongPassword('CMcoukyw')).toBe(false);
+    expect(functions.isStrongPassword('CMcouqwerqwrqwrqwerqwr232423kyw')).toBe(false);
 });
 
 test('matches valid strong password', () => {
-    expect(functions.isStrongPassword('Vwane')).toBe(false);
+    expect(functions.isStrongPassword('Vw')).toBe(false);
 });
 
 //////////////////////////////////////////////
@@ -66,11 +66,11 @@ test('matches valid date', () => {
 });
 
 test('matches valid date', () => {
-    expect(functions.isDate('1/1/1111')).toBe(false);
+    expect(functions.isDate('1/1/11222211')).toBe(false);
 });
 
 test('matches valid date', () => {
-    expect(functions.isDate('1/6/2353')).toBe(false);
+    expect(functions.isDate('1/612342134/2353')).toBe(false);
 });
 
 //////////////////////////////////////////////
@@ -84,9 +84,9 @@ test('matches valid hex codes used for HTML or CSS', () => {
 });
 
 test('matches valid hex codes used for HTML or CSS', () => {
-    expect(functions.isHexColor('#7FC32a')).toBe(false);
+    expect(functions.isHexColor('#7FC311112a')).toBe(false);
 });
 
 test('matches valid hex codes used for HTML or CSS', () => {
-    expect(functions.isHexColor('d2e43A')).toBe(false);
+    expect(functions.isHexColor('d2e411233A')).toBe(false);
 });
