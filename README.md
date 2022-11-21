@@ -1,5 +1,5 @@
 # Lab 8 - Starter    
-Dou    
+Dou Hoon Kwark
 
 1. Within a Github action that runs whenever code is pushed
 - I would fit my automated tests in Github action. Automated tests are possibly written in long LoC and they can involve many different tests that can be hard to test manually. Also, it is not efficient to run it after all the development is done because it can cause a severe consequence. Therefore, by running a previously created Github action on every push, we can easily and efficiently use automated tests for our Recipe project development pipeline. 
